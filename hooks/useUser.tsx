@@ -81,6 +81,7 @@ export const MyUserContextProvider = (props: Props) => {
   return <UserContext.Provider value={value} {...props} />;
 };
 
+//Custom hook used to remove the need of using useContext and verifying if null everytime
 export const useUser = () => {
   const context = useContext(UserContext);
   if (context === undefined) {
