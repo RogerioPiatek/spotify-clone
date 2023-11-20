@@ -1,7 +1,9 @@
 "use client";
 
-import AuthModal from "@/components/AuthModal";
 import { useEffect, useState } from "react";
+
+import AuthModal from "@/components/AuthModal";
+import UploadModal from "@/components/UploadModal";
 
 const ModalProvider = () => {
   //Used to verify if page is already loaded, if not returns null
@@ -18,6 +20,7 @@ const ModalProvider = () => {
   return (
     <>
       <AuthModal />
+      <UploadModal />
     </>
   );
 };
